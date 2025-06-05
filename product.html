@@ -17,6 +17,7 @@
       <h1 class="text-2xl">Greenden</h1>
 
     <svg
+    id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -37,20 +38,30 @@
       </ul>
     </nav>
 
-    <section class="text-center">
-      <h1 class="text-3xl font-bold mt-5 text-center">Our Products</h1>
-     
-      <input class=  "placeholder-gray-300   border border=black p-2 m-3" 
-      placeholder="Search for a Product"
-      style="width: 80%;">
+<!--Side navbar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0" style="width: 50%;height:100vh;right: -50%;">
+  <div class="text-right p-5">
+   <p id="closenav" class="inline cursor-pointer">X</p>
+  </div>
+<ul class="flex flex-col gap-10 items-center  text-gray-600">
+        <li><a href="./index.html" class="hover:text-black hover:underline">Home</a></li>
+        <li>
+          <a href="./product.html" class="hover:underline hover:text-black">Product</a>
+        </li>
+        <li>
+          <a  href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+        </li>
+      </ul>
+</section>
+
+ 
       
-      
-     </section>
 
      <section class="p-4 text-center">
- 
-        <div class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
-          <div>
+    <h1 class="text -3xl font-bold mt-5 text-center">Our Products</h1>
+      <input id="search" style="width: 80%;" placeholder="Search for a Product.." type="text" >
+        <div id="product-container" class="grid grid-cols-2 md:grid-cols-4 mt-5 gap-5">
+          <div class="text-center">
             <img src="./images/bestseller_1.png"  class="inline hover:shadow-xl  transform hover:-translate-y-2" alt="">
             <h1>Roseplant</h1>
             <p>$20</p>
@@ -118,5 +129,6 @@
         voluptatem adipisci minus harum aut voluptatum nesciunt aliquid provident cupiditate!</p>
         <p>@ 2025 Greenden.de</p>
      </section>
+     <script src="product.js"></script>
     </body>
     </html>

@@ -12,11 +12,12 @@
     />
   </head>
   <body>
+
     <nav
       class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10" >
       <h1 class="text-2xl">Greenden</h1>
 
-    <svg
+    <svg id="menuicon"
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -37,6 +38,22 @@
         </li>
       </ul>
     </nav>
+
+<section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000 right-0" style="width: 50%;height:100vh;right: -50%;">
+  <div class="text-right p-5">
+   <p id="closenav" class="inline cursor-pointer">X</p>
+  </div>
+<ul class="flex flex-col gap-10 items-center  text-gray-600">
+        <li><a href="./index.html" class="hover:text-black hover:underline">Home</a></li>
+        <li>
+          <a href="./product.html" class="hover:underline hover:text-black">Product</a>
+        </li>
+        <li>
+          <a  href="./contact.html" class="hover:underline hover:text-black">Contact</a>
+        </li>
+      </ul>
+</section>
+
 <!--Header Section-->
 
     <section class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -168,5 +185,6 @@
         voluptatem adipisci minus harum aut voluptatum nesciunt aliquid provident cupiditate!</p>
         <p>@ 2025 Greenden.de</p>
      </section>
+     <script src="contact.js"></script>
      </body>
      </html>
